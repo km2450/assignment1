@@ -1,0 +1,117 @@
+html{
+    font: normal 20px/1.5 Times, "Times New Roman", Georgia, serif;
+}
+
+h1, h2 {
+    font-variant: small-caps;
+
+    color: #000000
+}
+
+figcaption { 
+    font-weight:bold;
+    font-variant: small-caps;
+    font-size: 1rem;
+}
+
+q {
+    font-style: italic;
+    font-family: cursive;
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 1.0rem;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px; 
+
+    margin: auto;
+    padding: 1rem;
+}
+
+header, footer {
+    text-align: center;
+
+    border: 2px solid #ff0000;
+    
+    background: rgb(34,178,195);
+    background: linear-gradient(0deg, rgba(34,178,195,1) 0%, rgba(220,113,113,1) 49%, rgba(253,45,245,1) 100%);
+}
+
+.main-section{
+    text-align: center;
+    padding: 1rem;
+
+    background-color: rgb(208, 204, 204);
+}
+
+.main-section-figure img {
+    width: 90%;
+    height: auto;
+
+    padding: .4rem;
+    margin: auto;
+
+    border-radius: 2rem;
+}
+
+.main-section-figure {
+    width: 90%;
+    height: auto;
+
+    padding: .4rem;
+    margin: auto;
+    margin-bottom: .5rem;
+    text-align: center;   
+}
+
+#bio {
+    text-align: left;
+}
+
+#quote {
+    width: 30%;
+    padding: .4rem;
+    border: 2px solid #00ff04;
+    margin: auto;
+}
+
+iframe {
+    width: 70%;
+    padding: .5rem;
+    border: 2px solid rgb(0, 112, 255);
+    border-radius: 2rem;
+    margin: auto;
+}
+
+#relative-path-image {
+    width: 30%;
+    border: 2px solid rgb(255,0,255);
+    border-radius: 1rem;
+
+    background-color: hsla(240, 100%, 50%);
+}
+
+#absolute-path-image {
+    width: 30%;
+    border: 2px solid rgb(0,112,255);
+    border-radius: 1rem;
+    
+    background-color: hsla(300, 76%, 72%);
+}
+
+#relative-path-image figcaption {
+    color: rgb(255, 255, 255);
+}
+
+#absolute-path-image {
+    color: rgb(0, 0, 0)
+}
+
+h2 {
+    font-size: 20px;
+}
+
