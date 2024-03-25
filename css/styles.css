@@ -4,8 +4,12 @@ html{
 
 h1, h2 {
     font-variant: small-caps;
-
-    color: #000000
+    text-align: center;
+    color: #000000;
+  
+}
+h1{
+    margin: 1rem;
 }
 
 figcaption { 
@@ -21,7 +25,8 @@ q {
 }
 
 footer p {
-    font-size: 1.0rem;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
 body {
@@ -30,22 +35,44 @@ body {
 
     margin: auto;
     padding: 1rem;
+
+    background-color: rgb(208, 204, 204)
 }
 
 header, footer {
     text-align: center;
-
-    border: 2px solid #ff0000;
+    height : 10vh;
+    margin : 1rem;
+    border: .1rem solid #ff0000;
     
     background: rgb(34,178,195);
     background: linear-gradient(0deg, rgba(34,178,195,1) 0%, rgba(220,113,113,1) 49%, rgba(253,45,245,1) 100%);
 }
 
+main{
+    margin: 1rem;
+    width: 70%;
+    float: left;
+    clear: both;
+    
+}
+aside {
+    width: 18%;
+    float: right;
+    font-variant: small-caps;
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+footer {
+    clear: both;
+}
 .main-section{
     text-align: center;
     padding: 1rem;
 
-    background-color: rgb(208, 204, 204);
+
 }
 
 .main-section-figure img {
@@ -56,6 +83,7 @@ header, footer {
     margin: auto;
 
     border-radius: 2rem;
+    
 }
 
 .main-section-figure {
@@ -69,49 +97,178 @@ header, footer {
 }
 
 #bio {
+    width: 55%;
+    float: left;
     text-align: left;
+    margin-bottom: 4rem;
+    margin-top: 0;
+}
+#absolute-path-image {
+    width: 28%;
+    float: right;
+    border: .1rem solid rgb(0,112,255);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    background-color: hsla(300, 76%, 72%);
+
 }
 
 #quote {
-    width: 30%;
+    width:35%;
     padding: .4rem;
-    border: 2px solid #00ff04;
+    border: .1rem solid #00ff04;
+    box-shadow: .25rem .25rem .25rem;
     margin: auto;
+    clear: both;
+    
+
 }
 
 iframe {
     width: 70%;
     padding: .5rem;
-    border: 2px solid rgb(0, 112, 255);
+    border: .1rem solid rgb(0, 112, 255);
     border-radius: 2rem;
     margin: auto;
 }
 
+/**
 #relative-path-image {
     width: 30%;
     border: 2px solid rgb(255,0,255);
     border-radius: 1rem;
 
     background-color: hsla(240, 100%, 50%);
-}
+}**/
 
-#absolute-path-image {
-    width: 30%;
-    border: 2px solid rgb(0,112,255);
-    border-radius: 1rem;
-    
-    background-color: hsla(300, 76%, 72%);
-}
 
 #relative-path-image figcaption {
     color: rgb(255, 255, 255);
-}
-
-#absolute-path-image {
-    color: rgb(0, 0, 0)
 }
 
 h2 {
     font-size: 20px;
 }
 
+nav {
+    background-color: #b58;
+    padding: 0 1rem 2rem 1rem;
+    margin : 1rem;
+    text-align:center;
+    
+    
+}
+nav ul {
+    list-style-type: none;
+    padding : 0.25rem;
+    margin: 0 0.25rem;
+    
+}
+nav>ul>li{
+  
+    background-color: white;
+    
+}
+nav>ul>li>a {
+    color: black;
+    background-color: white;
+    display: block;
+    text-decoration: none;
+    border: 0.1rem solid rgb(0, 247, 255);
+}
+nav>ul>li>a:hover {
+    color: white;
+    background-color: black;
+    border: 0.1rem solid #b58;
+    display: block;
+    text-decoration: none;
+}
+#home {
+    float: left; 
+    width: 50%;
+}
+#contact {
+    float: right;
+    width: 50%;
+}
+
+tr,td {
+    text-decoration: none;    
+    font-variant: small-caps;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    border: .1rem solid black; /* Adjust border width as needed */
+    padding: 12px;
+
+}
+table {
+    width: 100%;
+   
+}
+aside>a{
+    color: black;
+    text-decoration: none;
+    line-height: 1.5rem;
+    float:left;
+}
+aside>a:hover{
+    color: #b58;
+    text-decoration: none;
+}
+input[type="text"],input[type="date"],input[type="color"],input[type="email"],input[type="tel"],input[type="category"],input[type="message"],input[type="submit"]{
+    width: 100%;
+}
+textarea {
+    width: 100%;
+}
+label {
+    font-variant: small-caps;
+    color :  black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+input[type="checkbox"] {
+    height: 1rem;
+    width: 1rem;
+}
+form {
+    padding: .1rem;
+    margin: auto;
+}
+@media (max-width: 900px){
+    html{
+        font-size: 10px;
+    }
+    #bio, #absolute-path-image{
+        float: none;
+        width: 70%;
+        }
+    }
+
+@media (max-width: 600px){
+    html{
+        font-size: 10px;
+    }
+    #home, #contact, main, aside{
+        float:none;
+        width: 95%;
+    }
+    #bio, #absolute-path-image{
+        width: 90%;
+        float: none;
+    }
+    aside{
+        float: none;
+        text-align: center;
+    }
+    table{
+        margin: auto;
+    }
+    header,footer{
+        width:93%
+    }
+    nav {
+        width: 90%;
+    }
+}
